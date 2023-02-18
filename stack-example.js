@@ -1,24 +1,26 @@
 function stack(word){
 
     var letters = []
-
-    var rwords
+    
+    var rwords = ""
 
     //check the word is palindrome or not
-
     // put letters of word into stack
-    for(let i; i < word.length; i++){
+    for(var i = 0; i < word.length; i++){
         letters.push(word[i])
     }
-
+    
     //pop the array and one by one store in rwords
-    for(let i; i < word.length; i++){
-        rwords += letters.pop(word[i])
+    for(var i = 0; i < word.length; i++){
+        rwords += letters.pop()
     }
-
-    if(word === rwords){
+    
+    
+    if(rwords === word ){
         console.log("It is plaindrome")
     }else{
         console.log("It is not plaindrome")
     }
 }
+
+stack('racecar')
