@@ -17,9 +17,9 @@ function stack(word){
     
     
     if(rwords === word ){
-        console.log("It is plaindrome")
+        console.log("It is palindrome")
     }else{
-        console.log("It is not plaindrome")
+        console.log("It is not palindrome")
     }
 }
 
